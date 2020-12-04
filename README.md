@@ -1,1 +1,2 @@
 # google-homepage
+ A project where I deconstructed google's homepage and rebuilt it. Limited functionality, mostly an exercise in html and css structure, layout and modification. I tried to copy google's layout at first but it was far to complicated and decided mid way to switch to a simple css grid implementation instead. I could use a lot more practice in getting elements placed correctly, and having responsive design. 
