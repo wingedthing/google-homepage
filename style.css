@@ -1,0 +1,257 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    margin: 0;
+    font-family: arial, sans-serif;
+    display: flex;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 4% auto 4%;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    opacity: .75;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container-h {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 3% 3% auto repeat(3, 3%) 4%;
+    justify-items: center;
+    align-items: flex-end;
+    grid-template-areas: 
+        "about store . gmail images apps sign-in";
+}
+
+.item-about {
+    grid-area: about;
+}
+
+.item-store {
+    grid-area: store;
+}
+
+.item-gmail {
+    grid-area: gmail;
+}
+
+.item-images {
+    grid-area: images;
+}
+
+.item-apps {
+    grid-area: apps;
+   /* justify-content: center;
+   align-content: center; */
+   justify-self: center;
+   align-self: flex-end;
+   padding: 0;
+   margin: 0 auto;
+   max-width: 70%;
+   max-height: 70%;
+}
+
+.dots {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.item-sign-in {
+    grid-area: sign-in;
+    /* background-color: cornflowerblue;
+    color: #fff;
+    text-decoration: none; */
+    background-color:#4285f4;
+    width: 5rem;
+    height: 2rem;
+    justify-self: flex-start;
+    align-self: flex-end;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid #4285f4;
+    display: grid;
+   
+}
+
+.sign-in-button {
+    color:white;
+    font-weight: bold;
+    outline: none;
+    background-color: #4285f4;
+    font-size: 13px;
+    justify-self: center;
+    align-self: center;
+}
+
+.sign-in-button:hover {
+    text-decoration: none;
+}
+
+.container-main {
+    display: grid;
+    grid-template-rows: 2fr 10% 10% 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "image image"
+    "search search"
+    "google-search lucky"
+    "none none"
+    ;
+    align-items: center;
+    justify-items: center;
+    column-gap: 1rem;
+}
+
+.item-img {
+    grid-area: image;
+    justify-self: center;
+    align-self: flex-end;
+}
+
+.item-search {
+    grid-area: search;
+    justify-self: center;
+    align-self: center;
+    width: 45rem;
+    background-color: #fff;
+    height: 4rem;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 7% auto 10%;
+    grid-template-areas: 
+    "glass search mic";
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 2rem;
+    margin: 0 auto;
+}
+
+.item-search:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgb(223,225,229,0);
+}
+
+
+.item-input {
+    justify-self: center;
+    align-self: center;
+    width: 35rem;
+    font: 16px arial, sans-serif;
+    border: none;
+    margin: 0;
+    outline: none;
+    height: 2.5rem !important;
+    grid-area: search;
+
+
+}
+
+.item-glass {
+    justify-self: center;
+    align-self: center;
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.item-mic {
+    justify-self: center;
+    align-self: center;
+    max-width: 50%;
+    max-height: 50%;
+
+}
+
+.item-submit {
+    grid-area: google-search;
+    justify-self: self-end;
+    align-self: start;
+    background-color: rgb(242,242,242);
+    color: rgb(95, 99, 104);
+    font-size: 14px;
+    height: 36px;
+    min-width: 54px;
+    font-family: arial, sans-serif;
+    border-radius: 4px;
+    border: 1px solid #f2f2f2;
+}
+
+.item-submit:hover {
+    border: 1px solid #c6c6c6;
+    color: #222;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.item-lucky {
+    grid-area: lucky;
+    justify-self: self-start;
+    align-self: start;
+    background-color: rgb(242,242,242);
+    color: rgb(95, 99, 104);
+    font-size: 14px;
+    height: 36px;
+    min-width: 54px;
+    font-family: arial, sans-serif;
+    border-radius: 4px;
+    border: 1px solid #f2f2f2;
+}
+
+.item-lucky:hover {
+    border: 1px solid #c6c6c6;
+    color: #222;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.container-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 5%) 10% auto repeat(3, 5%);
+    grid-template-areas: 
+    "advert business how . privacy terms settings";
+    background-color: rgb(242,242,242);
+    margin: 0;
+    justify-items: center;
+    align-items: center;
+    font-size: 14px;
+    color: rgb(95,99,104);
+    text-decoration-color: rgb(95,99,104);
+
+}
+
+.item-advert {
+    grid-area: advert;
+}
+
+.item-business {
+    grid-area: business;
+}
+
+.item-how {
+    grid-area: how;
+    justify-self: start;
+}
+
+.item-privacy {
+    grid-area: privacy;
+}
+
+.item-terms {
+    grid-area: terms;
+}
+
+.item-settings {
+    grid-area: settings;
+}
