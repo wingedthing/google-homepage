@@ -56,14 +56,12 @@ a:hover {
 
 .item-apps {
     grid-area: apps;
-   /* justify-content: center;
-   align-content: center; */
-   justify-self: center;
-   align-self: flex-end;
-   padding: 0;
-   margin: 0 auto;
-   max-width: 70%;
-   max-height: 70%;
+    justify-self: center;
+    align-self: flex-end;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 70%;
+    max-height: 70%;
 }
 
 .dots {
@@ -73,9 +71,6 @@ a:hover {
 
 .item-sign-in {
     grid-area: sign-in;
-    /* background-color: cornflowerblue;
-    color: #fff;
-    text-decoration: none; */
     background-color:#4285f4;
     width: 5rem;
     height: 2rem;
